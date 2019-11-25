@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} Index Page {% endblock %}
+
+{% load draw_menu %}
+{% block content %}
+
+{% draw_menu 'main_menu' %}
+{% draw_menu 'second_menu' %}
+
+{% endblock %}

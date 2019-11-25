@@ -56,7 +56,7 @@ ROOT_URLCONF = 'nested_menu.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,6 +66,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
+        # 'LIBRARIES':{
+        #     'draw_menu': 'app.templatetags.draw_menu',
+
+        #     }
     },
 ]
 
