@@ -12,7 +12,7 @@ class MenuItemAdmin(admin.ModelAdmin):
             'description': "Parent should be a menu or item",
             'fields': (('menu', 'parent'), 'title', 'slug')
             }),
-            )        
+            )
 
 
 @admin.register(Menu)
